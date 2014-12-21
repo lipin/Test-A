@@ -1,0 +1,9 @@
+== README
+一个公司发的面试程序
+自己的电脑换了win7，所以安装了vagrant+virtualbox
+*操作系统ubuntu 12.04 server
+*git
+*sublimeText 3
+*ruby-2.1.4
+*rails-4.1.8
+*mysql
