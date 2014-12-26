@@ -1,0 +1,11 @@
+<div class="center jumbotron">
+  <h1><%= @body['message'] %></h1>
+  	<%= form_tag("/guess", method: "get") do %>
+	  <%= label_tag(:word, "word") %>
+	  <%= text_field_tag(:word) %>
+	  <%= submit_tag("Make A Guess!", class: "btn btn-primary" )%>
+	<% end %>
+  <%#= link_to "Make A Guess!", guess_path, class: "btn btn-lg btn-primary" %>
+  <%= link_to "Get Result!", result_path, class: "btn btn-lg btn-primary" %>
+</div>
+<%= debug @body%>

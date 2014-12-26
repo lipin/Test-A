@@ -1,0 +1,6 @@
+<div class="center jumbotron">
+  <h1><%= @body['message'] %></h1>
+  <%= link_to "Give me a new word!", nextword_path, class: "btn btn-lg btn-primary" %>
+  <%= link_to "Get Last Result!", ltresult_path, class: "btn btn-lg btn-primary" %>
+</div>
+<%= debug(@body)%>

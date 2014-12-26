@@ -1,6 +1,6 @@
 module App
 	extend self
- def create_menu
+ def create_menu(build_menus)
   	conn = get_conn
 
   	conn.post do |req|
@@ -8,14 +8,6 @@ module App
       req.headers['Content-Type'] = 'application/json'
       req.body = build_menus
     end
-
-  end
-  def build_menus
-  	 Jbuilder.encode do |json|
-		json.key_format! camelize: :lower
-		json.player_id  "ping.li1688@gmail.com"
-		json.action  "startGame"
-	 end
   end
 
   def get_conn
